@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40B9AB4D-9AA9-4B93-9FF8-23894F2B1650}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AplicacaoDemo.Dominio</RootNamespace>
+    <AssemblyName>AplicacaoDemo.Dominio</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entidade\EntidadeBase.cs" />
+    <Compile Include="Entidade\Produto.cs" />
+    <Compile Include="Entidade\ProdutoVenda.cs" />
+    <Compile Include="Entidade\Venda.cs" />
+    <Compile Include="Entidade\Vinho.cs" />
+    <Compile Include="Enumerador\TipoVinho.cs" />
+    <Compile Include="Interface\Repositorio\IProdutoRepositorio.cs" />
+    <Compile Include="Interface\Repositorio\IRepositorioBase.cs" />
+    <Compile Include="Interface\Repositorio\IVendaRepositorio.cs" />
+    <Compile Include="Interface\Repositorio\IVinhoRepositorio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servico\ProdutoServico.cs" />
+    <Compile Include="Servico\ServicoBase.cs" />
+    <Compile Include="Servico\VendaServico.cs" />
+    <Compile Include="Servico\VinhoServico.cs" />
+    <Compile Include="Utils\ListaPaginada.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

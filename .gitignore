@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/AplicacaoDemo/.vs/AplicacaoDemo/v15
+/AplicacaoDemo/AplicacaoDemo.App/bin/Debug/net461
+/AplicacaoDemo/AplicacaoDemo.App/obj
+/AplicacaoDemo/AplicacaoDemo.Dominio/obj/Debug
+/AplicacaoDemo/AplicacaoDemo.Repositorio/bin/Debug
+/AplicacaoDemo/AplicacaoDemo.Repositorio/obj/Debug
+/AplicacaoDemo/packages
+/AplicacaoDemo/AplicacaoDemo.Dominio/bin/Debug
